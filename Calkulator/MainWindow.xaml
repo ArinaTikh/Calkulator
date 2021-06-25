@@ -21,7 +21,7 @@
         <Label Content="Количество дней" HorizontalAlignment="Left" Height="32" Margin="35,149,0,0" VerticalAlignment="Top" Width="165"/>
         <Label Content="Процентая ставка" HorizontalAlignment="Left" Height="32" Margin="35,213,0,0" VerticalAlignment="Top" Width="165"/>
         <Label Content="Калькулятор" HorizontalAlignment="Left" Height="49" VerticalAlignment="Top" Width="400" IsEnabled="False" FontSize="30"  Background="LightBlue" Grid.ColumnSpan="2" Margin="-3,0,0,0" Foreground="Black"/>
-        <TextBox x:Name="rezult" HorizontalAlignment="Left" Height="32" Margin="35,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" IsEnabled="False" Background="LightBlue" TextChanged="rezult_TextChanged_1"/>
+        <TextBox x:Name="rezultat" HorizontalAlignment="Left" Height="32" Margin="35,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" IsEnabled="False" Background="LightBlue" TextChanged="rezult_TextChanged_1"/>
 
     </Grid>
 

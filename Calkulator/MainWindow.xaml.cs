@@ -22,8 +22,11 @@ namespace Calkulator
         {
 
         }
-        private void rezult_TextChanged_1(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        private void rezultat_TextChanged_1(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
+            rezultat.Text = rezvsego.ToSplit();
+            rezultat.Text = rezsum.ToSplit();
+            rezultat.Text = effstavka.ToSplit();
 
         }
         public void Button_Click(object sender, RoutedEventArgs e)
@@ -34,9 +37,9 @@ namespace Calkulator
             string proce = proc.ToString();
             string[] numbers = proce.Split(' ', ' ', ' ') ;
 
-            if (cash < 500000)
+            if (cash <= 500000)
             {
-                if (day > 365)
+                if (day >= 365)
                 {
                     MessageBox.Show("Параметры введины неверно");
                 }
@@ -52,6 +55,7 @@ namespace Calkulator
             int rezvsego = cash * day * proc;
             int rezsum = rezvsego - cash;
             int effstavka = rezsum / cash / day;
+             
 
         }
 
