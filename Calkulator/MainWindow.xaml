@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calkulator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="600">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="509*"/>
+            <ColumnDefinition Width="83*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="money" HorizontalAlignment="Left" Height="31" Margin="35,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" TextChanged="money_TextChanged" SpellCheck.IsEnabled="True"/>
+        <TextBox x:Name="days" HorizontalAlignment="Left" Height="33" Margin="35,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" TextChanged="days_TextChanged"/>
+        <TextBox x:Name="procent" HorizontalAlignment="Left" Height="33" Margin="35,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" TextChanged="procent_TextChanged" SpellCheck.IsEnabled="True"/>
+        <Button Content="Рассчитать" HorizontalAlignment="Left" Height="32" Margin="37,298,0,0" VerticalAlignment="Top" Width="163" IsDefault="True" Background="LightBlue" Click="Button_Click"/>
+        <Label Content="Введите:" HorizontalAlignment="Left" Height="32" Margin="35,54,0,0" VerticalAlignment="Top" Width="165" IsEnabled="False"/>
+        <Label Content="Результат:" HorizontalAlignment="Left" Height="32" Margin="37,335,0,0" VerticalAlignment="Top" Width="165" IsEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="35,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" Background="LightBlue" IsEnabled="False"/>
+        <Label Content="Сумма" HorizontalAlignment="Left" Height="32" Margin="35,86,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Количество дней" HorizontalAlignment="Left" Height="32" Margin="35,155,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Процентая ставка" HorizontalAlignment="Left" Height="32" Margin="35,219,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Калькулятор" HorizontalAlignment="Left" Height="49" Margin="35,0,0,0" VerticalAlignment="Top" Width="434" IsEnabled="False" FontSize="30" />
+
     </Grid>
+
+
 </Window>

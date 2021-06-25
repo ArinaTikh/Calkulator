@@ -1,17 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Calkulator
 {
@@ -20,9 +8,26 @@ namespace Calkulator
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            InitializeComponent();
+            int cash = Convert.ToInt32(money);
+            int day = Convert.ToInt32(days);
+            int proc = Convert.ToInt32(procent);
+             if (cash > 500000)
+            {
+                if ( day >365)
+                {
+                    MessageBox.Show("Параметры введины неверно");
+                }
+            }
+            int numb = proc * 100;
+            for (numb = 0; numb < 100; numb++) ;
+            {
+                numb = numb + numb;
+            }
+
+                
+
         }
     }
 }
