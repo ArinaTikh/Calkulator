@@ -17,11 +17,11 @@
         <Button Content="Рассчитать" HorizontalAlignment="Left" Height="32" Margin="37,298,0,0" VerticalAlignment="Top" Width="163" IsDefault="True" Background="LightBlue" Click="Button_Click"/>
         <Label Content="Введите:" HorizontalAlignment="Left" Height="32" Margin="35,54,0,0" VerticalAlignment="Top" Width="165" IsEnabled="False"/>
         <Label Content="Результат:" HorizontalAlignment="Left" Height="32" Margin="37,335,0,0" VerticalAlignment="Top" Width="165" IsEnabled="False"/>
-        <TextBlock HorizontalAlignment="Left" Height="28" Margin="35,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" Background="LightBlue" IsEnabled="False"/>
         <Label Content="Сумма" HorizontalAlignment="Left" Height="32" Margin="35,86,0,0" VerticalAlignment="Top" Width="165"/>
         <Label Content="Количество дней" HorizontalAlignment="Left" Height="32" Margin="35,155,0,0" VerticalAlignment="Top" Width="165"/>
         <Label Content="Процентая ставка" HorizontalAlignment="Left" Height="32" Margin="35,219,0,0" VerticalAlignment="Top" Width="165"/>
         <Label Content="Калькулятор" HorizontalAlignment="Left" Height="49" Margin="35,0,0,0" VerticalAlignment="Top" Width="434" IsEnabled="False" FontSize="30" />
+        <TextBox x:Name="rezult" HorizontalAlignment="Left" Height="32" Margin="37,367,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" IsEnabled="False" Background="LightBlue" TextChanged="rezult_TextChanged_1"/>
 
     </Grid>
 
