@@ -22,7 +22,7 @@ namespace Calkulator
         {
 
         }
-        private void rezult_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        private void rezult_TextChanged_1(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
 
         }
@@ -32,7 +32,7 @@ namespace Calkulator
             int day = Convert.ToInt32(days);
             int proc = Convert.ToInt32(procent);
             string proce = proc.ToString();
-            string[] numbers = proce.Split(:' '; :' '; :'';) ;
+            string[] numbers = proce.Split(' ', ' ', ' ') ;
 
             if (cash < 500000)
             {
@@ -42,17 +42,19 @@ namespace Calkulator
                 }
 
             }
+
             proc = proc * 100;
-            for (int i = 0; i < 365; i++) ;
+
+            for (int i = 0; i < 365; i++);
             {
                 proc = proc + proc;
             }
-
-
             int rezvsego = cash * day * proc;
             int rezsum = rezvsego - cash;
+            int effstavka = rezsum / cash / day;
 
         }
 
+        
     }
 }
