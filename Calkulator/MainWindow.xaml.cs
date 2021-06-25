@@ -26,15 +26,14 @@ namespace Calkulator
         {
 
         }
-        private void rezult_TextChanged_1(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-
-        }
         public void Button_Click(object sender, RoutedEventArgs e)
         {
             int cash = Convert.ToInt32(money);
             int day = Convert.ToInt32(days);
             int proc = Convert.ToInt32(procent);
+            string proce = proc.ToString();
+            string[] numbers = proce.Split(:' '; :' '; :'';) ;
+
             if (cash < 500000)
             {
                 if (day > 365)
@@ -43,6 +42,12 @@ namespace Calkulator
                 }
 
             }
+            proc = proc * 100;
+            for (int i = 0; i < 365; i++) ;
+            {
+                proc = proc + proc;
+            }
+
 
             int rezvsego = cash * day * proc;
             int rezsum = rezvsego - cash;
